@@ -1,0 +1,16 @@
+label[for="warranty-time"],
+label[for="magalu-brand"],
+label[for="nbmorigin"],
+#nbmorigin {
+    margin-top: 13px;
+}
+label[for="warranty-time"],
+label[for="magalu-brand"] {
+    display: block;
+}
+label[for="nbmorigin"] {
+    display: inline-block;
+}
+#nbmorigin {
+    margin-right: 5px;
+}

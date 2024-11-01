@@ -1,0 +1,35 @@
+.auth img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 30px;
+    margin-left: 5px;
+}
+.forminp-auth .auth {
+    margin-left: 10px;
+    padding: 4px 10px;
+    box-shadow: none;
+}
+.wp-core-ui .auth.button-primary:hover {
+    box-shadow: none;
+    font-weight: normal;
+}
+.forminp-auth .connected .status{
+    color: green;
+}
+.virt-separator {
+    margin: 50px 0;
+}
+.disclaimer {
+    font-size: 16px;
+    line-height: 30px;
+}
+.faq > h2 {
+    font-size: 22px;
+}
+ul.faq {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.frequently-questions {
+    font-size: 15px;
+}

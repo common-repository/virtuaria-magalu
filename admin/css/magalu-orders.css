@@ -1,0 +1,217 @@
+#magalu-order-logs,
+#magalu-orders {
+    background-color: #fff;
+}
+select[name="magalu-orders_length"] {
+    min-width: 50px;
+}
+#magalu-order-logs_length select,
+#magalu-orders_length select {
+    padding: 4px 15px;
+}
+#magalu-order-logs_length > select,
+#magalu-orders_length > select {
+    padding: 6px;
+}
+#magalu-order-logs_wrapper,
+#magalu-orders_wrapper {
+    background: #fff;
+    padding: 10px;
+    max-width: 1120px;
+}
+#magalu-orders thead tr:first-of-type {
+    background: #adacac;
+    color: #0a0a0a;
+}
+#magalu-orders.dataTable tbody tr {
+    height: 55px;
+    font-weight: 550;
+}
+.mag-subtitle {
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+#order-flux > form {
+    display: table;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-width: 300px;
+}
+#order-flux {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    max-width: 1100px;
+}
+#order-flux label {
+    display: block;
+    margin-bottom: 5px;
+}
+#order-flux h2 {
+    margin-top: 0;
+}
+#order-flux .btn-container {
+    text-align: right;
+}
+#order-flux .next-btn {
+    margin-top: 10px;
+}
+#order-flux input[type="text"],
+#order-flux input[type="date"] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+#message {
+    margin-left: 0;
+    margin-bottom: 20px;
+}
+.logs {
+    margin-top: 70px;
+}
+
+@media only print {
+    .list-title + p {
+        display: none;
+    }
+    #magalu-orders_wrapper {
+        display: block !important;
+    }
+    .title-balance,
+    .balance,
+    div#magalu-orders_paginate,
+    p#footer-left,
+    div#magalu-orders_length,
+    div#magalu-orders_filter {
+        display: none;
+    }
+}
+
+
+/* Estilização geral */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.mag-subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Container da tabela */
+#magalu-orders_wrapper {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dt-layout-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Input de busca e seleção */
+.dt-length select, .dt-search input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.dt-search input {
+    width: 200px;
+}
+
+/* Estilização da tabela */
+#magalu-orders {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+#magalu-orders thead {
+    background-color: #f0f0f0;
+}
+
+#magalu-orders th, #magalu-orders td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#magalu-orders th {
+    font-weight: bold;
+    color: #555;
+}
+
+#magalu-orders tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Links */
+#magalu-orders a {
+    color: #0073aa;
+    text-decoration: none;
+}
+
+#magalu-orders a:hover {
+    text-decoration: underline;
+}
+
+/* Status */
+#magalu-orders td:nth-child(3) {
+    font-weight: bold;
+    color: #444;
+}
+
+/* Botões de paginação */
+.dt-paging-button {
+    padding: 5px 10px;
+    margin: 0 3px;
+    background-color: #0073aa;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dt-paging-button.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.dt-paging-button.current {
+    background-color: #005f8d;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .dt-layout-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dt-search input {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #magalu-orders th, #magalu-orders td {
+        padding: 10px 5px;
+    }
+}
